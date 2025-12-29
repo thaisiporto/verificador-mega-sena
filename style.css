@@ -23,6 +23,11 @@ header {
     text-align: center;
 }
 
+header > h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
 main > section {
     text-align: center;
     padding-top: 30px;

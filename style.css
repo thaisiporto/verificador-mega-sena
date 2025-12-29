@@ -132,13 +132,17 @@ textarea {
         width: 100%;
     }
 
+    header {
+        border-top: #0166b4 solid 4px;
+    }
+
     header > h1 {
-        font-size: 22px;
+        font-size: 28px;
         box-sizing: border-box;
     }    
 
     header > h2 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     section#numerosSorteados {
@@ -151,7 +155,7 @@ textarea {
         height: 45px;
         width: 45px;
         padding: 2px;
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: 5px;
         display: inline-block;
     }
@@ -169,6 +173,7 @@ textarea {
     div.container-jogos {
         width: 90% !important;
         max-width: 100vw;
+        margin: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -194,7 +199,6 @@ textarea {
         width: 90%;
         max-width: 90%; 
         box-sizing: border-box;
-        font-size: 12px;
     }
 
 } 

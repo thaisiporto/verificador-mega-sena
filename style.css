@@ -16,16 +16,22 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+body {
+    width: 100%;
+}
+
 header {
     background-image: linear-gradient(to left, #0166b4, #3eb8ad);
     color: white;
     padding: 30px;
+    width: 100%;
     text-align: center;
 }
 
 header > h2 {
     font-size: 18px;
     font-weight: 600;
+
 }
 
 main > section {
@@ -66,7 +72,6 @@ button#btnVerificar, button#btnAdicionar {
     cursor: pointer;
     border-radius: 5px;
     letter-spacing: 2px;
-    
 }
 
 button#btnVerificar:hover {
@@ -119,3 +124,78 @@ textarea {
     font-size: 16px;
     text-align: center;
 }
+
+/** MOBILE **/
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden; 
+        width: 100%;
+    }
+
+    header > h1 {
+        font-size: 22px;
+        box-sizing: border-box;
+    }    
+
+    header > h2 {
+        font-size: 16px;
+    }
+
+    section#numerosSorteados {
+        width: 90% !important;
+        margin: auto;
+        box-sizing: border-box;
+    }
+
+    input.sorteado {
+        height: 45px;
+        width: 45px;
+        padding: 2px;
+        font-size: 16px;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+
+    button#btnVerificar, button#btnAdicionar {
+        margin: 20px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    div.grupoJogo {
+        margin-top: 10px;
+    }
+
+    div.container-jogos {
+        width: 90% !important;
+        max-width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 10px;
+        box-sizing: border-box;
+    } 
+
+    span {
+        margin: 0 2px;
+        font-size: 16px;
+    }
+
+
+    div#entrarJogos {
+        width: 90% !important;
+        max-width: 100vw;
+        margin: auto;
+        padding: 0 10px;
+    }
+
+    textarea {
+        width: 90%;
+        max-width: 90%; 
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+
+} 
+
